@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Face Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🤖 AI Face Recognition Dashboard</h1>
+
+<h2>🎥 Live Camera</h2>
+<img src="http://192.168.0.197:5000/video" width="100%" />
+
+<div class="container">
+  <div class="panel">
+    <h2>📡 Live Events</h2>
+    <div id="logs"></div>
+  </div>
+
+  <div class="panel">
+    <h2>🧠 System Status</h2>
+    <p id="status">Connecting...</p>
+  </div>
+</div>
+
+<script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
